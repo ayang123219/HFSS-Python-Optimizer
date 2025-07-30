@@ -108,19 +108,14 @@ best_params = ai_optimizer.optimize()
 ## Project Structure
 ```
 hfss-optimization/
-├── optimizers/          # Traditional optimization algorithms
-│   ├── advanced_constraint.py  # Main optimizer class
-│   └── pso.py           # Particle Swarm implementation
-├── ai_optimizer/        # AI-driven optimization
-│   ├── agent.py         # Active learning framework
-│   ├── dataset.py       # Feature management
-│   └── trainers/        # Model trainers
-│       ├── bnn.py       # Bayesian Neural Network
-│       └── gpr.py       # Gaussian Process Regression
-├── api/                 # HFSS integration
-│   └── hfss_controller.py  # HFSS control interface
+├── optim_framework.py   # Main optimizer class
+├── BNNoptim.py          # Bayesian Neural Network optimizer
+├── GPRoptim.py          # Gaussian Process Regression optimizer
+├── DataSet.py           # Feature management
+├── Trainer.py           # Active learning framework
+├── api.py               # HFSS control interface
 ├── examples/            # Usage examples
-├── results/             # Optimization outputs
+├── optim_results/       # Optimization outputs
 ├── requirements.txt     # Dependencies
 └── README.md            # This document
 ```
@@ -168,6 +163,6 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## Support
 For issues or questions, please open an issue on GitHub or contact:
-- mailto:huasheng@example.com
+- ayang1643816608@gmail.com
 
 Optimize with confidence - This framework has been successfully applied to antenna design, filter optimization, and EMI mitigation projects with 40%+ reduction in simulation time compared to manual approaches.
