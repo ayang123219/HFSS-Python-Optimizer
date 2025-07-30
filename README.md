@@ -158,6 +158,6 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## Support
 For issues or questions, please open an issue on GitHub or contact:
-- mailto:huasheng@example.com
+- ayang1643816608@gmail.com
 
 Optimize with confidence - This framework has been successfully applied to antenna design, filter optimization, and EMI mitigation projects with 40%+ reduction in simulation time compared to manual approaches.
