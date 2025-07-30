@@ -1,6 +1,6 @@
 # HFSS Optimization Framework
 
-This project provides an advanced optimization framework for Ansys HFSS simulations, combining traditional optimization methods with AI-driven techniques to efficiently solve complex electromagnetic design problems.
+HFSS-AI-Optimizer is a design optimization tool that integrates various optimization algorithms, AI surrogate models, and automated control of HFSS (High-Frequency Structure Simulator). This tool aims to achieve efficient parameter optimization for radio frequency/microwave devices by leveraging surrogate modeling techniques such as Bayesian Neural Networks (BNN) and Gaussian Process Regression (GPR), combined with active learning strategies. It significantly reduces the cost of manual parameter tuning and simulation time while improving design efficiency.
 
 ## Features
 
