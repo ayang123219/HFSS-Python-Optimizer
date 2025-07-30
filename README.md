@@ -122,14 +122,14 @@ hfss-optimization/
 
 ## Key Components
 
-### 1. HFSS Controller (api/hfss_controller.py)
+### 1. HFSS Controller (api.py)
 Robust interface for HFSS automation with:
 - Connection management with auto-recovery
 - Variable setting with unit conversion
 - S-parameter extraction
 - Simulation timeout handling
 
-### 2. Constrained Optimizer (optimizers/advanced_constraint.py)
+### 2. Optimization Framework (optim_framework.py)
 Supports multiple optimization strategies:
 ```python
 # Available optimizer types
@@ -139,16 +139,11 @@ optimizer.optimize(optimizer_type="cmaes")
 optimizer.optimize(optimizer_type="de")
 ```
 
-### 3. AI Agent Optimizer (ai_optimizer/agent.py)
-Active learning workflow:
-1. Initial dataset generation (Latin Hypercube)
-2. BNN/GPR surrogate model training
-3. Active learning cycles:
-   - Candidate generation
-   - Uncertainty-based sampling
-   - HFSS validation
-   - Model refinement
-4. Optimal solution extraction
+### 3. AI Optimizers (BNNoptim.py & GPRoptim.py)
+Advanced surrogate models for optimization:
+- Bayesian Neural Network (BNN) implementation
+- Gaussian Process Regression (GPR) implementation
+- Active learning cycles with uncertainty-aware sampling
 
 ## Contributing
 We welcome contributions! Please follow these steps:
@@ -163,6 +158,6 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## Support
 For issues or questions, please open an issue on GitHub or contact:
-- ayang1643816608@gmail.com
+- mailto:huasheng@example.com
 
 Optimize with confidence - This framework has been successfully applied to antenna design, filter optimization, and EMI mitigation projects with 40%+ reduction in simulation time compared to manual approaches.
